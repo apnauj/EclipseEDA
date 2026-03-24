@@ -1,0 +1,7 @@
+
+public class Ejemplar extends Libro {
+	private String idEjemplar;
+	protected Ejemplar(Libro libroPadre) {
+		super(libroPadre.getTitulo(), libroPadre.getAutores(), libroPadre.getPaginas(), libroPadre.getEditorial());
+	}
+}

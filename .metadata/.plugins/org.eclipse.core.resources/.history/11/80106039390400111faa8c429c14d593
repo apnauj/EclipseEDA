@@ -1,0 +1,16 @@
+
+public class Ejemplar extends Libro {
+	private String idEjemplar;
+	private boolean disponibilidad;
+	
+	protected Ejemplar(Libro libroPadre, String ejemplares) {
+		super(libroPadre.getTitulo(), libroPadre.getAutores(), libroPadre.getPaginas(), libroPadre.getEditorial());
+		
+		this.idEjemplar = libroPadre.getIdLibro() + "-" + ejemplares;
+		this.disponibilidad = true;
+	}
+	
+	public String getIdEjemplar() {
+		return idEjemplar;
+	}
+}

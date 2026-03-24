@@ -1,0 +1,7 @@
+
+public class Ejemplar extends Libro {
+	private String idEjemplar;
+	protected Ejemplar(Libro libroPadre) {
+		
+	}
+}

@@ -1,0 +1,12 @@
+
+public class ManejadorDeProyectos {
+	
+	private int [][] proyectos = new int[20][12];
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

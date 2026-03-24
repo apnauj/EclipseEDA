@@ -1,0 +1,7 @@
+Esta es una prueba de que puedo escribir en el fichero
+Esta es otra prueba
+Me gusta mucho el aguacate y el guacamole
+La 377 no es un cuadrado perfecto y ese es un resultado muy feo para un quiz
+*¨]["#%RRSGæðŋđßŋđßŋßŋđ¢„»ŋ»ħˀħˀ”“ðßŋđ
+int a = 2/0;
+int d = c/0;

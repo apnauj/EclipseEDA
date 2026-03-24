@@ -1,0 +1,54 @@
+import java.util.Arrays;
+
+public class ManejadorDeProyectos {
+	
+	private double [][] proyectos;
+	private final int CANTIDAD_PROYECTOS = 20;
+	private final int MESES = 12;
+	
+	public ManejadorDeProyectos() {
+		this.proyectos = new double[CANTIDAD_PROYECTOS][MESES];
+	}
+	
+	public double[][] getProyectos() {
+		return proyectos;
+	}
+	
+	public void anadirHoras(int proyecto, int mes, double horas) {
+		proyectos[proyecto][mes] = horas;
+	}
+	
+	public double horasPorMes(int mes) {
+		double ans = 0;
+		for(int i = 0; i < proyectos.length; i++) {
+			ans+=proyectos[i][mes];
+		}
+		return ans;
+	}
+	
+	public double horasPorProyecto(int proyecto) {
+		double ans = 0;
+		for(int i = 0; i < proyectos[proyecto].length; i++) {
+			ans+=proyectos[proyecto][i];
+		}
+		return ans;
+	}
+	
+	public double horasTotales() {
+		double ans = 0;
+		for(int i = 0; i < proyectos.length;i++) {
+			ans += horasPorProyecto(i);
+		}
+		return ans;
+	}
+
+	public static void main(String[] args) {
+		ManejadorDeProyectos m = new ManejadorDeProyectos();
+		for(int i = 0; i < m.getProyectos().length; i++) {
+			Arrays.fill(m.getProyectos()[i], 1);
+		}
+		System.out.println(m.horasPorMes(0));
+		System.out.println(m.horasPorProyecto(0));
+		System.out.println(m.horasTotales(0));
+	}
+}

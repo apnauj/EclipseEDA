@@ -1,0 +1,41 @@
+
+public class Prestamo {
+	private String fechaPrestamo;
+	private String fechaDevolución;
+	private String fechaRealDevolucion;
+	private Usuario usuario;
+	private Ejemplar libro;
+	
+	public String getFechaPrestamo() {
+		return fechaPrestamo;
+	}
+	public void setFechaPrestamo(String fechaPrestamo) {
+		this.fechaPrestamo = fechaPrestamo;
+	}
+	public String getFechaDevolución() {
+		return fechaDevolución;
+	}
+	public void setFechaDevolución(String fechaDevolución) {
+		this.fechaDevolución = fechaDevolución;
+	}
+	public String getFechaRealDevolucion() {
+		return fechaRealDevolucion;
+	}
+	public void setFechaRealDevolucion(String fechaRealDevolucion) {
+		this.fechaRealDevolucion = fechaRealDevolucion;
+	}
+	public Usuario getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(Usuario usuario) {
+		this.usuario = usuario;
+	}
+	public Ejemplar getLibro() {
+		return libro;
+	}
+	public void setLibro(Ejemplar libro) {
+		this.libro = libro;
+	}
+	
+	
+}

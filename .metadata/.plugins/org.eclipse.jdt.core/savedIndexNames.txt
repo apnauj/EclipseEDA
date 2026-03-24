@@ -1,0 +1,22 @@
+INDEX VERSION 1.134+/home/juanpa/Documents/university/S3.2026/Estructuras/EclipseWorkspace/.metadata/.plugins/org.eclipse.jdt.core
+1961360520.index
+2627361708.index
+3811910912.index
+1865797976.index
+2999490428.index
+2769879155.index
+3934480683.index
+3048246885.index
+1938438289.index
+3319429866.index
+1730826742.index
+1557343056.index
+1539239753.index
+65063966.index
+1176385843.index
+3154559566.index
+2486310294.index
+3405902552.index
+1273385114.index
+93522454.index
+2642696637.index

@@ -1,0 +1,7 @@
+
+public class Biblioteca {
+	private Libro[] libros;
+	private Usuario[] usuarios;
+	private Prestamo[] prestamos;
+	
+}

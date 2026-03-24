@@ -1,0 +1,125 @@
+import java.awt.JobAttributes.MultipleDocumentHandlingType;
+import java.util.Arrays;
+
+public class Factorial {
+	
+	public static long factorial(long n) {
+		long f = 1;
+		for (int i = 2; i <= n; i++) {
+			f *= i;
+		}
+		return f;
+	}
+	
+	public static long factorialRecursivo(long n) {
+		if(n == 0 || n == 1) return 1;
+		return n * factorialRecursivo(n - 1);
+	}
+	
+	public static long fibonacci(long n) {
+		if(n == 0) return 0;
+		if(n == 1) return 1;
+		
+		return fibonacci(n-1) + fibonacci(n-2);
+	}
+	
+	public static long fibonacciFor(long n) {
+		if(n == 0) return 0;
+		if(n == 1) return 1;
+		long aux;
+		long previo1 = 1;
+		long previo2 = 1;
+		
+		for (int i = 0; i < (n-2); i++ ) {
+			aux = previo1;
+			
+			previo1 = previo1 + previo2;
+			previo2 = aux;
+			
+		}
+		return previo1;
+	}
+	
+	public static long sumaNaturales(long n) {
+		if(n <= 0) return 0;
+		if(n == 1) return n;
+		return n + sumaNaturales(n-1);
+	}
+	
+	public static long sumaNaturalesFor(long n) {
+		long ans = 0;
+		for (int i = 1; i <= n; i++) {
+			ans+=i;
+		}
+		return ans;
+	}
+	
+	public static int sumaElementos(int[] a) {
+		if(a.length == 0) return 0;
+		if(a.length == 1) return a[1];
+		
+		return a[a.length - 1] + sumaElementos(Arrays.copyOf(a, a.length - 1));
+	}
+	
+	
+	public static void main(String args[]) {
+//		long n = 20; 
+//		
+//		//Comparación Factoriales
+//		
+//        long inicioIterativoFactorial = System.nanoTime();
+//        long resultadoIterativoFactorial = factorial(n);
+//        long finIterativoFactorial = System.nanoTime();
+//        
+//        long inicioRecursivoFactorial = System.nanoTime();
+//        long resultadoRecursivoFactorial = factorialRecursivo(n);
+//        long finRecursivoFactorial = System.nanoTime();
+//
+//        System.out.println("Resultado iterativo Factorial: " + resultadoIterativoFactorial);
+//        System.out.println("Resultado recursivo Factorial: " + resultadoRecursivoFactorial);
+//        System.out.println("Tiempo Iterativo Factorial: " + (finIterativoFactorial - inicioIterativoFactorial) + " ns");
+//        System.out.println("Tiempo Recursivo Factorial: " + (finRecursivoFactorial - inicioRecursivoFactorial) + " ns");
+//        System.out.println(((finIterativoFactorial - inicioIterativoFactorial) > (finRecursivoFactorial - inicioRecursivoFactorial)) ? "Iterativo más lento" : "Recursivo más lento");
+//        
+//        //Comparación Fibonaccis
+//        
+//        long m = 40;
+//        
+//        long inicioIterativoFibonacci = System.nanoTime();
+//        long resultadoIterativoFibonacci = fibonacciFor(m);
+//        long finIterativoFibonacci = System.nanoTime();
+//        
+//        long inicioRecursivoFibonacci = System.nanoTime();
+//        long resultadoRecursivoFibonacci = fibonacci(m);
+//        long finRecursivoFibonacci = System.nanoTime();
+//
+//        System.out.println("Resultado iterativo Fibonacci: " + resultadoIterativoFibonacci);
+//        System.out.println("Resultado recursivo Fibonacci: " + resultadoRecursivoFibonacci);
+//        System.out.println("Tiempo Iterativo Fibonacci: " + (finIterativoFibonacci - inicioIterativoFibonacci) + " ns");
+//        System.out.println("Tiempo Recursivo Fibonacci: " + (finRecursivoFibonacci - inicioRecursivoFibonacci) + " ns");
+//        System.out.println(((finIterativoFibonacci - inicioIterativoFibonacci) > (finRecursivoFibonacci - inicioRecursivoFibonacci)) ? "Iterativo más lento" : "Recursivo más lento");
+//        
+//        //Comparación Suma Naturales
+//        
+//        long r = 40;
+//        
+//        long inicioIterativoNaturales = System.nanoTime();
+//        long resultadoIterativoNaturales = sumaNaturalesFor(r);
+//        long finIterativoNaturales = System.nanoTime();
+//        
+//        long inicioRecursivoNaturales= System.nanoTime();
+//        long resultadoRecursivoNaturales = sumaNaturales(r);
+//        long finRecursivoNaturales = System.nanoTime();
+//
+//        System.out.println("Resultado iterativo Naturales: " + resultadoIterativoNaturales);
+//        System.out.println("Resultado recursivo Naturales: " + resultadoRecursivoNaturales);
+//        System.out.println("Tiempo Iterativo Naturales: " + (finIterativoNaturales - inicioIterativoNaturales) + " ns");
+//        System.out.println("Tiempo Recursivo Naturales: " + (finRecursivoNaturales - inicioRecursivoNaturales) + " ns");
+//        System.out.println(((finIterativoNaturales - inicioIterativoNaturales) > (finRecursivoNaturales - inicioRecursivoNaturales)) ? "Iterativo más lento" : "Recursivo más lento");
+		
+		  int[] l = {1,2,3,4,};
+		  System.out.println(sumaElementos(l));
+        
+		
+	}
+}

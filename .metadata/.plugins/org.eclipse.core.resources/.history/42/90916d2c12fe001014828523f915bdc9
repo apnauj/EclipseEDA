@@ -1,0 +1,31 @@
+
+public class ManejadorDeProyectos {
+	
+	private double [][] proyectos;
+	private final int CANTIDAD_PROYECTOS = 20;
+	private final int MESES = 12;
+	
+	public ManejadorDeProyectos() {
+		this.proyectos = new double[CANTIDAD_PROYECTOS][MESES];
+	}
+	
+	public double[][] getProyectos() {
+		return proyectos;
+	}
+	
+	public void anadirHoras(int proyecto, int mes, double horas) {
+		proyectos[proyecto][mes] = horas;
+	}
+	
+	public double[] horasPorMes(int proyecto) {
+		double[] ans;
+		System.arraycopy(proyectos, proyecto, ans, 0, 12);
+		return ;
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+
+}

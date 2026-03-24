@@ -1,0 +1,22 @@
+
+public class ManejadorDeProyectos {
+	
+	private int [][] proyectos = new int[20][12];
+	
+	
+	public int[][] getProyectos() {
+		return proyectos;
+	}
+
+
+	public void setProyectos(int[][] proyectos) {
+		this.proyectos = proyectos;
+	}
+
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

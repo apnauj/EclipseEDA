@@ -1,0 +1,9 @@
+
+public class Prestamo {
+	private String fechaPrestamo;
+	private String fechaDevolución;
+	private String fechaRealDevolucion;
+	private Usuario usuario;
+	private Ejemplar libro;
+	
+}

@@ -1,0 +1,28 @@
+
+public class Biblioteca {
+	private Libro[] libros;
+	private Usuario[] usuarios;
+	private Prestamo[] prestamosActivos;
+	private Prestamo[] pretamosInactivos;
+	
+	public Libro[] getLibros() {
+		return libros;
+	}
+	public void setLibros(Libro[] libros) {
+		this.libros = libros;
+	}
+	public Usuario[] getUsuarios() {
+		return usuarios;
+	}
+	public void setUsuarios(Usuario[] usuarios) {
+		this.usuarios = usuarios;
+	}
+	public Prestamo[] getPrestamos() {
+		return prestamos;
+	}
+	public void setPrestamos(Prestamo[] prestamos) {
+		this.prestamos = prestamos;
+	}
+	
+	
+}

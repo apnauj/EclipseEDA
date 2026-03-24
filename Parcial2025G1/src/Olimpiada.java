@@ -1,0 +1,75 @@
+import java.util.Iterator;
+
+class Olimpiada{
+    private Evento[] eventos;
+    private Participante[] participantes;
+
+    public Olimpiada(Evento[] eventos, Participante[] participantes) {
+        super();
+        this.eventos = eventos;
+        this.participantes = participantes;
+    }
+
+    public Evento[] getEventos() {
+        return eventos;
+    }
+
+    public void setEventos(Evento[] eventos) {
+        this.eventos = eventos;
+    }
+
+    public Participante[] getParticipantes() {
+        return participantes;
+    }
+
+    public void setParticipantes(Participante[] participantes) {
+        this.participantes = participantes;
+    }
+    
+    //Tengo que para cada participante revisar si participó en el evento
+    //Si participó buscar en el arreglo de medallas en cuantas el es el participante
+    //luego ir guardando el máximo y el máximo participante
+    
+    //Completar
+    //Participante con mas medallas en total
+    public Participante participanteMasTotal() {
+    	Participante participanteMasMedallas = null;
+    	int maxActual = 0;
+    	for (int i = 0; i < participantes.length; i++) {
+    		int curr = 0;
+    		for(Evento evento: eventos) {
+    			Medalla[] medallas = evento.getMedallas();
+    			int j = 0;
+    			while(j < medallas.length && !medallas[j].getGanador().equals(participantes[i])) {
+    				j++;
+    			}
+    			if(j != medallas.length) {
+    				curr++;
+    			}
+    		}
+    		if(curr > maxActual) {
+    			maxActual = curr;
+    			participanteMasMedallas = participantes[i];
+    		}
+		}
+        return participanteMasMedallas;
+    }
+    
+    //Completar Total medallas por participante
+    
+    public TotalMedallas[] totalMedallasParticipantes() {
+         
+        return null;
+    }
+    
+    // Completar
+    public Evento buscarEvento(String nombEvento) {
+        return null;
+    }
+    
+    //Completar
+    //Dar el ganador de la medalla de tipo tipoMedalla en el evento nombEvento
+    public Participante ganadorMedalla(String nombEvento, String tipoMedalla) {
+        return null;
+    }
+}

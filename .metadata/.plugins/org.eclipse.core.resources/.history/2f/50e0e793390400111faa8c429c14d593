@@ -1,0 +1,8 @@
+
+public class Usuario {
+	private String tipoDoc;
+	private String numDoc;
+	private String nombres;
+	private String apellidos;
+	
+}

@@ -1,0 +1,22 @@
+
+public class ManejadorDeProyectos {
+	
+	private int [][] proyectos;
+	private final int CANTIDAD_PROYECTOS = 20;
+	private final int MESES = 12;
+	
+	
+	public int[][] getProyectos() {
+		return proyectos;
+	}
+
+
+	public void setProyectos(int[][] proyectos) {
+		this.proyectos = proyectos;
+	}
+
+
+	public static void main(String[] args) {
+
+
+}

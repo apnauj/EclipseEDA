@@ -1,0 +1,21 @@
+
+public class ManejadorDeProyectos {
+	
+	private double [][] proyectos;
+	private final int CANTIDAD_PROYECTOS = 20;
+	private final int MESES = 12;
+	
+	public ManejadorDeProyectos() {
+		this.proyectos = new double[CANTIDAD_PROYECTOS][MESES];
+	}
+	
+	public double[][] getProyectos() {
+		return proyectos;
+	}
+
+	public static void main(String[] args) {
+		
+	}
+
+
+}

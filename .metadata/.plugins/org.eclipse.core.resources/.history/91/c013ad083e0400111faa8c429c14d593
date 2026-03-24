@@ -1,0 +1,46 @@
+
+public class Ejemplar {
+	private Libro libro;
+	private final String idEjemplar;
+	private boolean disponibilidad;
+	private String ubicacion;
+	private boolean existencia;
+	
+	protected Ejemplar(Libro libroPadre, String ejemplares) {
+		this.libro = libro;
+		this.idEjemplar = libroPadre.getIdLibro() + "-" + ejemplares;
+		this.disponibilidad = true;
+	}
+	
+	public boolean getDisponibilidad() {
+		return disponibilidad;
+	}
+	
+	public String getUbicacion() {
+		return ubicacion;
+	}
+	
+	public boolean getExistencia() {
+		return existencia;
+	}
+	
+	public String getIdEjemplar() {
+		return idEjemplar;
+	}
+
+	public void setIdEjemplar(String idEjemplar) {
+		this.idEjemplar = idEjemplar;
+	}
+
+	public void setDisponibilidad(boolean disponibilidad) {
+		this.disponibilidad = disponibilidad;
+	}
+
+	public void setUbicacion(String ubicacion) {
+		this.ubicacion = ubicacion;
+	}
+
+	public void setExistencia(boolean existencia) {
+		this.existencia = existencia;
+	}
+}

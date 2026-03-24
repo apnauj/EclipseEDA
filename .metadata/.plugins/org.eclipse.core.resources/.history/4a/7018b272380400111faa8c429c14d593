@@ -1,0 +1,48 @@
+import java.util.Arrays;
+
+public class Libro {
+	private static int contadorLibros = 0;
+	private String titulo;
+	private String[] autores;
+	private int paginas;
+	private String editorial;
+	private String idLibro;
+	private int contadorEjemplares = 0;
+	
+	public String getTitulo() {
+		return titulo;
+	}
+	public void setTitulo(String titulo) {
+		this.titulo = titulo;
+	}
+	public String[] getAutores() {
+		return autores;
+	}
+	public void setAutores(String[] autores) {
+		this.autores = autores;
+	}
+	public int getPaginas() {
+		return paginas;
+	}
+	public void setPaginas(int paginas) {
+		this.paginas = paginas;
+	}
+	public String getEditorial() {
+		return editorial;
+	}
+	public void setEditorial(String editorial) {
+		this.editorial = editorial;
+	}
+	public String getIdLibro() {
+		return idLibro;
+	}
+	
+	public Libro(String titulo, String[] autores, int paginas, String editorial) {
+        this.titulo = titulo;
+        this.autores = autores;
+        this.paginas = paginas;
+        this.editorial = editorial;
+        this.idLibro = String.valueOf(++contadorLibros);
+    }
+	
+}

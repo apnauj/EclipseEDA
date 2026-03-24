@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="java.lang.Class">
+		<item key="selection" value="proyecto"/>
+		<item key="replaceBarOpen" value="false"/>
+		<list key="findhistory">
+			<item value="fileOutputStream"/>
+			<item value="tostr"/>
+			<item value="tos"/>
+			<item value="=="/>
+			<item value="buscarProd"/>
+			<item value="paquetePorPro"/>
+			<item value="tipo==2"/>
+			<item value="cantidad"/>
+			<item value="paquetePo"/>
+			<item value="paquete"/>
+			<item value="buscarPro"/>
+			<item value="paquetePor"/>
+			<item value="lista"/>
+			<item value="listaju"/>
+			<item value="while"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="409"/>
+		<item key="DIALOG_Y_ORIGIN" value="212"/>
+	</section>
+</section>
