@@ -1,3 +1,6 @@
+import java.math.BigDecimal;
+import java.math.BigInteger;
+import java.math.MathContext;
 import java.util.Arrays;
 
 public class Factorial {
@@ -29,14 +32,37 @@ public class Factorial {
 		long previo1 = 1;
 		long previo2 = 1;
 		
-		for (int i = 0; i < (n-2); i++ ) {
+		for (int i = 0; i < (n-2); i++) {
 			aux = previo1;
-			
-			previo1 = previo1 + previo2;
+			previo1 += previo2;
 			previo2 = aux;
 			
 		}
 		return previo1;
+	}
+	
+	public static long fibonacciRecursivo(int n) {
+		if(n == 1) return 1;
+		if(n == 2) return 1;
+		return fibonacciRecursivo(1,1,n);
+	}
+	
+	public static long fibonacciRecursivo(long n1, long n2, long n) {
+		if(n <= 2) return n1;
+		long aux = n1;
+		return fibonacciRecursivo(n1+n2,aux,--n);
+	}
+	
+	public static BigInteger fibonacciRecursivoPro(long n) {
+		if(n == 1) return new BigInteger("1");
+		if(n == 2) return new BigInteger("1");
+		return fibonacciRecursivoPro(new BigInteger("1"),new BigInteger("1"),n);
+	}
+	
+	public static BigInteger fibonacciRecursivoPro(BigInteger n1, BigInteger n2, long n) {
+		if(n <= 2) return n1;
+		BigInteger aux = n1;
+		return fibonacciRecursivoPro(new BigInteger(n1.toString()).add(n2),aux,--n);
 	}
 	
 	public static long sumaNaturales(long n) {
@@ -94,9 +120,12 @@ public class Factorial {
 	}
 	
 	
+	
 	public static void main(String args[]) {
-		int[] arreglo = {1000,2,3,4,5,5,6,7,7,7,7,999};
-		System.out.println(maximoEnArreglo(arreglo));
-		
+		BigInteger fi1000 = fibonacciRecursivoPro(100);
+		BigInteger fi999 = fibonacciRecursivoPro(99);
+		BigDecimal b1 = new BigDecimal(fi1000);
+		BigDecimal b2 = new BigDecimal(fi999);
+		System.out.println(b1.divide(b2, MathContext.DECIMAL128));
 	}
 }

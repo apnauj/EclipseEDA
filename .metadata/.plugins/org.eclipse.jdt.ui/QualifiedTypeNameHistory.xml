@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="EValorMayorSaldo"/>
-    <fullyQualifiedTypeName name="java.lang.Float"/>
-    <fullyQualifiedTypeName name="ELongitudNegativa"/>
-    <fullyQualifiedTypeName name="java.lang.Override"/>
-    <fullyQualifiedTypeName name="FiguraGeometrica"/>
-    <fullyQualifiedTypeName name="Circulo"/>
     <fullyQualifiedTypeName name="Rectangulo"/>
     <fullyQualifiedTypeName name="ETrianguloInvalido"/>
     <fullyQualifiedTypeName name="ELongitudInvalida"/>
@@ -55,9 +49,15 @@
     <fullyQualifiedTypeName name="Evento"/>
     <fullyQualifiedTypeName name="Medalla"/>
     <fullyQualifiedTypeName name="Participante"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
-    <fullyQualifiedTypeName name="java.awt.JobAttributes.MultipleDocumentHandlingType"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="java.awt.JobAttributes.MultipleDocumentHandlingType"/>
+    <fullyQualifiedTypeName name="Factorial"/>
+    <fullyQualifiedTypeName name="com.sun.org.apache.bcel.internal.generic.NEW"/>
+    <fullyQualifiedTypeName name="java.math.BigInteger"/>
+    <fullyQualifiedTypeName name="ReverseArray"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="com.sun.jndi.url.rmi.rmiURLContext"/>
 </qualifiedTypeNameHistroy>

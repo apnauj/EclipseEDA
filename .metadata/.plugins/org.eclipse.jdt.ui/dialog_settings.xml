@@ -21,9 +21,9 @@
 	<section name="NewClassCreationWizard.dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="417"/>
 		<item key="DIALOG_Y_ORIGIN" value="0"/>
-		<item key="DIALOG_WIDTH" value="647"/>
-		<item key="DIALOG_HEIGHT" value="728"/>
-		<item key="DIALOG_FONT_NAME" value="1|Ubuntu Sans|11.0|0|GTK|1|"/>
+		<item key="DIALOG_WIDTH" value="801"/>
+		<item key="DIALOG_HEIGHT" value="726"/>
+		<item key="DIALOG_FONT_NAME" value="1|JetBrainsMonoNL Nerd Font|11.0|0|GTK|1|"/>
 	</section>
 	<section name="OptionalMessageDialog.hide.">
 		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
@@ -33,6 +33,8 @@
 		<item key="create_unimplemented" value="true"/>
 	</section>
 	<section name="completion_proposal_size">
+		<item key="size.x" value="359"/>
+		<item key="size.y" value="220"/>
 	</section>
 	<section name="quick_assist_proposal_size">
 	</section>
@@ -130,5 +132,39 @@
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT" value="420"/>
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
 		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item key="DIALOG_X_ORIGIN" value="333"/>
+		<item key="DIALOG_Y_ORIGIN" value="0"/>
+		<item key="DIALOG_WIDTH" value="706"/>
+		<item key="DIALOG_HEIGHT" value="646"/>
+		<item key="DIALOG_FONT_NAME" value="1|Ubuntu Sans|11.0|0|GTK|1|"/>
+	</section>
+	<section name="javadoc">
+		<item key="javadoc_command_history" value="/snap/eclipse/131/usr/lib/eclipse/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.linux.x86_64_21.0.9.v20251105-0741/jre/bin/javadoc"/>
+		<item key="fromStandard" value="true"/>
+		<item key="docletname" value=""/>
+		<item key="docletpath" value=""/>
+		<item key="access" value="public"/>
+		<item key="use" value="true"/>
+		<item key="author" value="true"/>
+		<item key="version" value="true"/>
+		<item key="nodeprecated" value="false"/>
+		<item key="nodeprecatedlist" value="false"/>
+		<item key="splitindex" value="true"/>
+		<item key="noindex" value="false"/>
+		<item key="notree" value="false"/>
+		<item key="nonavbar" value="false"/>
+		<item key="openinbrowser" value="false"/>
+		<item key="source" value="21"/>
+		<item key="antpath" value="/home/juanpa/Documents/university/S3.2026/Estructuras/EclipseWorkspace/Clase11/javadoc.xml"/>
+		<item key="destdir" value="/home/juanpa/Documents/university/S3.2026/Estructuras/EclipseWorkspace/Clase11/doc"/>
+		<section name="projects">
+			<section name="Clase11">
+				<item key="href" value=""/>
+				<item key="destdir" value="/home/juanpa/Documents/university/S3.2026/Estructuras/EclipseWorkspace/Clase11/doc"/>
+				<item key="antpath" value="/home/juanpa/Documents/university/S3.2026/Estructuras/EclipseWorkspace/Clase11/javadoc.xml"/>
+			</section>
+		</section>
 	</section>
 </section>
