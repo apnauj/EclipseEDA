@@ -15,7 +15,7 @@ public class QuickSortRandomPivot {
 	    while (i < j) {
 	        while (a[++i].compareTo(pivote) < 0);
 
-	        while (a[--j].compareTo(pivote) > 0);
+	        while (j > inicio && a[--j].compareTo(pivote) > 0);
 
 	        if (i < j) {
 	            temp = a[i];

@@ -58,6 +58,6 @@
     <fullyQualifiedTypeName name="com.sun.tools.classfile.StackMapTable_attribute.chop_frame"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
     <fullyQualifiedTypeName name="java.lang.Boolean"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="SearchFrom"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
