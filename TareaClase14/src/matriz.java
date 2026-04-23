@@ -1,4 +1,3 @@
-
 public class matriz {
 	
 	public static int sumar(int[][] a) {
@@ -32,7 +31,7 @@ public class matriz {
 	public static void main(String[] args) {
 		int[][] a = {
 				{2,3,3},
-				{1,2,3},
+				{1,2,3,7},
 				{1,2,3}
 		};
 		System.out.println(sumarSinAux(a));
